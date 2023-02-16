@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notificar incidencia</title>
+    </head>
+    <body>
+        <form action="/procesar-incidencia.php">
+            <fieldset>
+                <legend>Datos de la Incidencia:</legend>
+                <div class="grupoFormulario">
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" placeholder="Su nombre de usuario" id="usuario" required/>
+                </div>
+                <div class="grupoFormulario">
+                    <select name="departamento">
+                        <option value="informatica" selected>Informática</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="ventas">Ventas</option>
+                      </select>
+                </div>
+                <div class="grupoFormulario">
+                    <label for="descripcion">Descripción:</label>
+                    <textarea
+                    class="descripcion" 
+                    cols="40" 
+                    rows="3" 
+                    id="description" 
+                    placeholder="Describa la incidencia"></textarea>
+                </div>
+                <div class="grupoFormulario">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" placeholder="Su Contraseña" id="password" required/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <button type="reset">Reiniciar</button>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>            
+    </body>
+</html>
